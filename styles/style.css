@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
-  --background: #1e1b4b;
-  --accent: #fef3c7;
+  --background: #27005D;
+  --accent: #AED2FF;
+  --accent2: #E4F1FF;
   --text: #F4F4F4;
   --black: #2C2C2C;
   --white: #F4F4F4;
@@ -120,7 +121,7 @@ body {
 }
 
 .tile__emoji {
-  background-color: var(--accent);
+  background-color: var(--accent2);
   border-radius: 16px;
   padding: 10px;
   font-size: 2em;
