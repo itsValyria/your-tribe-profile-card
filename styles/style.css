@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-  --background: #27005D;
-  --accent: #AED2FF;
-  --accent2: #E4F1FF;
+  --background: #2dd4bf;
+  --accent: #80ae9f;
   --text: #F4F4F4;
   --black: #2C2C2C;
   --white: #F4F4F4;
@@ -13,11 +13,28 @@ body {
   margin: 0;
   background-color: var(--background);
   font-family: 'Quicksand', sans-serif;
+  background-image: url('../assets/background.jpeg');
+  background-size:cover;
+  animation: slidein 100s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
 }
 
 .main-container {
   display: flex;
   gap: 16px;
+  background: #30f2db2a;
 }
 
 .praat {
@@ -44,6 +61,10 @@ body {
 }
 
 .scroll p {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, .075);
+}
+
+.scroll p {
   font-size: 10em;
   color: var(--text);
   font-weight: bold;
@@ -52,7 +73,7 @@ body {
 }
 
 .right-to-left {
-  animation: RightToLeft 300s infinite linear;
+  animation: RightToLeft 700s infinite linear;
 }
 
 @keyframes  RightToLeft {
@@ -65,7 +86,7 @@ body {
 }
 
 .left-to-right {
-  animation: LeftToRight 300s infinite linear;
+  animation: LeftToRight 700s infinite linear;
 }
 
 @keyframes  LeftToRight {
@@ -100,6 +121,7 @@ body {
   position: relative;
   font-weight: 600;
   font-size: 1.5em;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .096);
 }
 
 .tile__overview {
@@ -109,6 +131,11 @@ body {
 .tile__description {
   display: none;
   overflow: auto;
+}
+
+.tile--fullscreen .tile__description {
+  display: flex;
+  align-items: center;
 }
 
 .tile__button {
@@ -121,7 +148,7 @@ body {
 }
 
 .tile__emoji {
-  background-color: var(--accent2);
+  background-color: var(--accent);
   border-radius: 16px;
   padding: 10px;
   font-size: 2em;
@@ -131,6 +158,8 @@ body {
   right: 0;
   margin: 0 auto;
   width: 64px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .096);
+
 }
 
 .tile__button:hover {
@@ -158,10 +187,49 @@ body {
   display: none;
 }
 
-.tile--fullscreen .tile__description {
-  display: unset;
+.tile__image {
+  size: 50%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .7;
+}
+
+.footer__text {
+  font-size: .7em;
+  padding: 1em;
+  line-height: 8px;
+  color: var(--text);
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
 }
 
 .header {
   color: var(--text);
+}
+
+.icon {
+  stroke: var(--text);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer__icons > a {
+  width: 30px;
+  height: 30px;
 }
