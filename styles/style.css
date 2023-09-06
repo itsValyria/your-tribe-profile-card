@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-  --background: #2dd4bf;
+  --background: #36ffe460;
   --accent: #80ae9f;
   --text: #F4F4F4;
   --black: #2C2C2C;
@@ -18,7 +18,7 @@ body {
   animation: slidein 100s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-  animation-direction: alternate;              
+  animation-direction: alternate;         
 }
 
 @-webkit-keyframes slidein {
@@ -31,164 +31,46 @@ from {background-position: top;background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 }
 
-.main-container {
-  display: flex;
-  gap: 16px;
+.main__container {
   background: #30f2db2a;
-}
-
-.praat {
+  display: flex;
   height: 100vh;
-  width: 30%;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.big {
+.main__img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.203);
   display: flex;
   align-items: center;
-  transform: rotate(-90deg);
-  margin-left: -5em;
 }
 
-.scroll {
-  white-space: nowrap;
-  margin: 0 2em;
-}
-
-.scroll div {
+.main__left {
+  width: 40%;
   display: flex;
-  gap: 2em;
+  justify-content: space-around;
 }
 
-.scroll p {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, .075);
-}
-
-.scroll p {
-  font-size: 10em;
-  color: var(--text);
-  font-weight: bold;
-  margin-bottom: 0;
-  line-height: 10px;
-}
-
-.right-to-left {
-  animation: RightToLeft 700s infinite linear;
-}
-
-@keyframes  RightToLeft {
-  from {
-    transform: translateX(-10%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.left-to-right {
-  animation: LeftToRight 700s infinite linear;
-}
-
-@keyframes  LeftToRight {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-.main {
+.main__right {
   width: 60%;
-  display: flex;
-  align-items: center;
+  margin-left: 2em;
 }
 
-.tile-container {
-  display: grid;
-  grid-template-columns: repeat(2, 25vw);
-  gap: 16px;
+.name {
+  font-size: 2em;
 }
 
 .tile {
   background-color: var(--white);
-  border-radius: 6px;
-  margin: 2em;
-  border-radius: 20px;
-  text-align: center;
-  padding: 0.5em;
-  padding-top: 4em;
-  position: relative;
-  font-weight: 600;
-  font-size: 1.5em;
-  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .096);
-}
-
-.tile__overview {
-  margin-top: 0;
-}
-
-.tile__description {
-  display: none;
-  overflow: auto;
-}
-
-.tile--fullscreen .tile__description {
+  height: 50%;
+  width: 50%;
+  border-radius: 8px;
+  margin: auto;
   display: flex;
-  align-items: center;
-}
-
-.tile__button {
-  font-size: 3em;
-  background-color: transparent;
-  border: none;
-  width: 64px;
-  transition: all .1s ease-in;
-  cursor: pointer;
-}
-
-.tile__emoji {
-  background-color: var(--accent);
-  border-radius: 16px;
-  padding: 10px;
-  font-size: 2em;
-  position: absolute;
-  top: -.7em;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 64px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .096);
-
-}
-
-.tile__button:hover {
-  transform: scale(1.2);
-}
-
-.tile--fullscreen {
-  position: absolute;
-  z-index: 5;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tile--fullscreen .tile__button {
-  transform: scaleX(-1);
-}
-
-.tile--fullscreen .tile__button:hover {
-  transform: scaleX(-1) scale(1.2);
-}
-
-.tile--fullscreen .tile__overview {
-  display: none;
-}
-
-.tile__image {
-  size: 50%;
+  justify-content: space-around;
+  padding: 2em;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.203);
 }
 
 .footer {
@@ -233,3 +115,66 @@ to {background-position: -100px 0px;background-size:2750px;}
   width: 30px;
   height: 30px;
 }
+
+/* DIT IS DE TEXT SCROLL */
+
+/* .praat {
+  height: 100vh;
+  width: 30%;
+  overflow: hidden;
+}
+
+.big {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+  margin-left: -5em;
+} */
+
+/* .scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, .075);
+} */
+
+/* .scroll p {
+  font-size: 10em;
+  color: var(--text);
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 10px;
+} */
+
+/* .right-to-left {
+  animation: RightToLeft 700s infinite linear;
+}
+
+@keyframes  RightToLeft {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.left-to-right {
+  animation: LeftToRight 700s infinite linear;
+}
+
+@keyframes  LeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+} */
