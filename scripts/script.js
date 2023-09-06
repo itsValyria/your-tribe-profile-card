@@ -12,7 +12,7 @@
 
 // function expand(button) {
 //   button.parentElement.classList.toggle('tile--fullscreen');
-}
+
 
 // Reef & Co.
 // Voor al uw webdesign. En meer... ;)
