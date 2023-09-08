@@ -11,14 +11,11 @@
 }
 
 body {
-  /* MARGIN: Zegt iets over de ruimte aan de buitenkant. */
   margin: 0;
-  /* BACKGROUND-COLOR: Zegt iets over de achtergrond kleur. */
   background-color: var(--background);
-  /* FONT-FAMILY: Zegt iets over welk font gebruikt wordt op de webiste. */
   font-family: 'Quicksand', sans-serif;
   background-image: url('../assets/background.jpeg');
-  background-size: cover;
+  background-size:cover;
   animation: slidein 100s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -38,18 +35,15 @@ to {background-position: -100px 0px;background-size:2750px;}
 .main__container {
   background: #30f2db2a;
   display: flex;
-  /* HEIGHT: Zegt iets over de hoogte van de website. */
   height: 100vh;
-  /* JUSTIFY-CONTENT: Zegt iets over hoe de content horizontaal aligned wordt. */
   justify-content: center;
-  /* ALIGN-ITEMS: Zegt iets over hoe de content verticaal aligned wordt. */
   align-items: center;
 }
 
 .main__img {
-  /* BORDER-RADIUS: Zegt iets over hoe rond de border is. */
+  /* height: 10%;
+  width: auto; */
   border-radius: 8px;
-  /* BOX-SHADOW: Zegt iets over de schaduw. */
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.203);
   display: flex;
   align-items: center;
@@ -57,7 +51,6 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 .main__left {
-  /* WIDTH: Zegt iets over de breedte. */
   width: 40%;
   display: flex;
   justify-content: left;
@@ -69,11 +62,9 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 .name {
-  /* FONT-SIZE: Zegt iets over de grootte van de tekst. */
   font-size: 3em;
   margin-bottom: 0;
   margin-top: 0;
-  /* TEXT-SHADOW: Zegt iets over de shadow van de tekst. */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.203);
 }
 
@@ -91,7 +82,6 @@ to {background-position: -100px 0px;background-size:2750px;}
   margin: auto;
   display: flex;
   justify-content: space-around;
-  /* PADDING: Zegt iets over de ruimte aan de binnenkant. */
   padding: 2em;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.203);
 }
@@ -104,14 +94,12 @@ to {background-position: -100px 0px;background-size:2750px;}
 .main__abt {
   display: flex;
   align-items: center;
-  /* Zegt iets over de ruimte tussen in dit geval twee sections/divs. */
   gap: 20px;
   font-weight: bold;
   font-size: 1.2em;
 }
 
 .footer {
-  /* Zegt iets over de positie. */
   position: absolute;
   bottom: 0;
   left: 0;
