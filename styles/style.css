@@ -17,6 +17,7 @@ body {
   background-color: var(--background);
   /* FONT-FAMILY: Zegt iets over welk font gebruikt wordt op de webiste. */
   font-family: 'Quicksand', sans-serif;
+
   background-image: url('../assets/background.jpeg');
   background-size: cover;
   animation: slidein 100s;
@@ -25,6 +26,7 @@ body {
   animation-direction: alternate;         
 }
 
+/* bron: https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 @-webkit-keyframes slidein {
 from {background-position: top; background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
