@@ -238,7 +238,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 /* DIT IS DE TEXT SCROLL */
 
-.praat {
+.main__scrollcontainer {
   height: 100vh;
   width: 30%;
   overflow: hidden;
@@ -249,14 +249,14 @@ to {background-position: -100px 0px;background-size:2750px;}
   z-index: -1;
 }
 
-.big {
+.main__text {
   display: flex;
   align-items: center;
   transform: rotate(-90deg);
   margin-left: -5em;
 }
 
-.scroll {
+.main__scroll {
   white-space: nowrap;
   margin: 0 2em;
 }
