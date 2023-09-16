@@ -26,7 +26,7 @@ body {
   animation-direction: alternate;         
 }
 
-/* bron: https://alvarotrigo.com/blog/animated-backgrounds-css/ */
+/* BRON: https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 @-webkit-keyframes slidein {
 from {background-position: top; background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
@@ -156,6 +156,9 @@ to {background-position: -100px 0px;background-size:2750px;}
   height: 30px;
 }
 
+/* DIT IS DE SKILLS BOX */
+/* BRON (ONGEVEER): https://www.youtube.com/watch?v=IHQMOklyqXM&ab_channel=DarkCode */
+
 .container{
   position: relative;
   max-width: 500px;
@@ -239,6 +242,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 /* DIT IS DE TEXT SCROLL */
+/* BRON: https://www.youtube.com/watch?v=WFzquzZic2o&t=25s&ab_channel=WinterwindInc. */
 
 .main__scrollcontainer {
   height: 100vh;
